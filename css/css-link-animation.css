@@ -1,0 +1,58 @@
+.animation-bounce{
+    animation: link-bounce 2s ease infinite;
+    position: relative;
+    z-index: 2;
+}
+.animation-jello{
+    animation: jello 2s ease infinite;
+    position: relative;
+    z-index: 2;
+}
+.animation-pulse{
+    animation: pulse 2s ease infinite;
+    position: relative;
+    z-index: 2;
+}
+.animation-shake{
+    animation: shake 2s ease infinite;
+    position: relative;
+    z-index: 2;
+}
+.animation-vibrate{
+    animation: vibrate 2s ease infinite;
+    position: relative;
+    z-index: 2;
+}
+.animation-wobble{
+    animation: wobble 2s ease infinite;
+    position: relative;
+    z-index: 2;
+}
+
+
+@keyframes link-bounce {
+    0% {
+        animation-timing-function: ease-in ;opacity: 1;transform: translateY(-45px)
+    }
+    8% {
+        opacity: 1
+    }
+    13.3333333333% {
+        animation-timing-function: ease-in ;transform: translateY(-24px)
+    }
+    21.6666666667% {
+        animation-timing-function: ease-in ;transform: translateY(-12px)
+    }
+    27.3333333333% {
+        animation-timing-function: ease-in ;transform: translateY(-6px)
+    }
+    31% {
+        animation-timing-function: ease-in ;transform: translateY(-4px)
+    }
+    8.3333333333% , 18.3333333333% , 25% , 29% {
+        animation-timing-function: ease-out;transform: translateY(0px)
+    }
+    33.3333333333% {
+        animation-timing-function: ease-out;opacity: 1;transform: translateY(0px)
+    }
+}

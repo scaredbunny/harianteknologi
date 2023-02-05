@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Not Found</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&family=Open+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://berbagi.link/css/not_found.css?v=1">
+        <link rel="stylesheet" href="https://berbagi.link/css/promo.css?v=6">
+
+    </head>
+    <body>
+        <div class="super-container">
+            <div class="container">
+                <header>
+                    <div id="content-header">
+                        <a class="main-logo-container" href="https://berbagi.link">
+                            <img class="logo" src="https://berbagi.link/images/landing_page/logo_1.png" alt="">
+                        </a>
+                        <div class="menu-container">
+                            
+                            <div class="menu-item">
+                                <a href="https://berbagi.link/paket">Harga</a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="https://berbagi.link/fitur">Fitur</a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="https://berbagi.link/blog">Blog</a>
+                            </div>
+                                                        <div class="menu-item">
+                                <a href="https://berbagi.link/login">Login</a>
+                            </div>
+                            <div class="menu-item menu-item-special animation-shake">
+                                <a href="https://berbagi.link/daftar">Daftar Gratis</a>
+                            </div>
+                                                    </div>
+                        <div id="btn-mobile-menu" class="mob-nav-group-container">
+                            <img class="grid-menu" src="https://berbagi.link/images/feature/grid-menu.png" alt="">
+                        </div>
+                    </div>
+                    <div id="content-header-mob">
+                        <div class="content-back-container">
+                            <a href="https://berbagi.link" class="content-back">
+                                <div class="img-back-container">
+                                    <img class="img-back" src="https://berbagi.link/images/not_found/Path 100.svg" alt="" />
+                                </div>
+                                <div class="content-back-lbl">
+                                    Back to home
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <div id="content-body">
+                    <div class="img-not-found-container">
+                        <img class="img-not-found" src="https://berbagi.link/images/not_found/Group 20.svg" alt="" />
+                    </div>
+                    <div class="lbl-not-found-container">
+                        <div class="lbl-not-found">
+                            Maaf, halaman tidak ditemukan
+                        </div>
+                    </div>
+                    <div class="desc-not-found-container">
+                        <div class="desc-not-found">
+                            Anda mungkin salah mengetik alamat atau halaman mungkin telah dipindahkan.
+                        </div>
+                    </div>
+                    <div class="link-not-found-container">
+                        <a class="link-not-found" href="https://berbagi.link/daftar">
+                            Buat Mini Website Anda Sekarang, Gratis!
+                        </a>
+                    </div>
+                </div>
+                <footer>
+                    <div id="content-footer">
+                        <div class="content-footer-container">
+                            <div class="lbl-powered-by">
+                                Powered by
+                            </div>
+                            <div class="img-powered-by-container">
+                                <img class="img-powered-by" src="https://berbagi.link/images/not_found/amanah techno labs-01.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="modal-promo" style="display: none">
+            <div class="modal-promo-content">
+                
+                <a class="modal-promo-link" href="https://berbagi.link/fitur">
+                    <img class="img-promo" src="https://berbagi.link/images/promo14.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).on("click", ".img-profile", function(event){
+            $(".m-dropdown__wrapper").css("display", "block");
+        })
+        $(document).on("click", ".super-container", function(event){
+            $(".m-dropdown__wrapper").css("display", "none");
+        })
+        $(document).on("click", ".img-profile, .m-dropdown__wrapper", function(event){
+            event.stopPropagation()
+        })
+    </script>
+    <script src="https://berbagi.link/js/cookie.js"></script>
+    <script>
+        $(document).ready(function(){
+            var _showPromo  = getCookie("show_promo");
+            if(!_showPromo) {
+                var _dateCookie     = new Date();
+                var _minutesExpired = 180;
+                setCookie("show_promo", "1", _minutesExpired);
+                $('.modal-promo').slideDown(500);  
+            }
+        });
+
+        $(document).on("click", "body", function(event){
+            $(".modal-promo").slideUp(500);
+        })
+    </script>
+</html>

@@ -1,0 +1,205 @@
+.berbagi-link-super-container.berbagi-link-main.tab-donasi {
+    background-color: #e8e8e8;min-height:100%;position: absolute;height: auto;width: 100%;display: inline-block;
+    background: #e8e8e8 !important;
+}
+
+.berbagi-link-super-container .fundraiser-container {
+    width: 100%;
+    max-width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+.fundraiser-profile {
+    background: white; 
+    padding: 20px 15px 20px 25px;
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    border-radius: 10px;;
+}
+
+.logo-fundraiser {
+    width: 100%;
+}
+
+.fundraiser-name {
+    font-weight: bold;font-size: 17px;color: #707070;
+    margin-bottom: 60px;
+}
+
+.fundraiser-verify {
+    width: 12px;top: 7px;margin-left: 2px;
+}
+
+.contact-container{
+    font-size:10px;color: #707070;
+}
+
+.nav-fundraiser{
+    padding: 10px 20px 10px; border-bottom: 2px solid #19A2A2;
+}
+
+.list-campaign {
+    border-radius: 10px;
+}
+
+.list-campaign .fundraiser-name {
+    font-size: 11px;
+    font-weight: normal;
+    position: relative;
+}
+
+.list-campaign .lbl-needed {
+    font-size: 19px;
+    font-size: 10px;color: #747474;
+}
+
+.list-campaign .fundraiser-verify{
+    top: 2px;
+}
+
+.campaign-funds-needed {
+    font-size: 10px; font-weight: 600;
+    color: #747474;
+}
+
+.img-campaign {
+    display: none;
+    width: 100%; height: auto; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* border-top-left-radius: 10px; border-bottom-left-radius: 10px; */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+
+.bg-img-campaign {
+    display: block;
+    width: 100%; height: 100%; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* border-top-left-radius: 10px; border-bottom-left-radius: 10px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.title-campaign {
+    font-size: 13px; color: #747474; padding-top: 10px;
+}
+
+.footer-berbagi-link{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+}
+
+.footer-content {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    height: 31px;
+    /* width: 100%;
+    max-width: 150px; */
+}
+
+.footer-content img {
+    /* width: 100%; */
+    height: 100%;
+}
+
+.footer-content img.footer-custom {
+    /* width: 100%; */
+    height: 165%;
+    margin-top: -10px;
+}
+
+#footer-white {
+    display: none;  
+}
+
+.type-fundraiser-container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+}
+
+.type-fundraiser {
+    color: white;
+    background-color: #FE9D2E;
+    padding: 3px 60px;
+    border-radius: 10px;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.campaign-funds-needed-container{
+    bottom: 5px;
+    width: 100%;
+    left: 0px;
+}
+
+.fundraiser-profile .fundraiser-verify{position: inherit;}
+
+.line-funds-percent{
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .fundraiser-profile-content .row {
+        position: relative;
+    }
+
+    .fundraiser-profile-content .col-md-3 {
+        position: absolute;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .fundraiser-profile-content .col-md-3 div img{
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    .fundraiser-name { font-size: 25px; }
+    .contact-container { font-size: 13px; }
+    .nav-fundraiser { font-size: 16px; }
+    .title-campaign{ font-size: 14px; }
+    .list-campaign .fundraiser-name { font-size: 13px; }
+    .list-campaign .lbl-needed { font-size: 13px; margin-bottom: 5px;}
+    .campaign-funds-needed { font-size: 17px; word-break: break-word; }
+    .type-fundraiser { padding: 3px 13px; font-size: 10px; }
+    .fundraiser-name { margin-bottom: 110px;}
+    .img-campaign{display: block;}
+    .bg-img-campaign{display: none;}
+    .campaign-funds-needed-container{ bottom: 7px; }
+    .fundraiser-profile .fundraiser-verify{position: absolute;  top: 13px; margin-left: 10px;}
+    #mobile-view .lbl-donasi-info { font-size: 9px; }
+    #mobile-view .nav-fundraiser { font-size: 12px; }
+    #mobile-view .title-campaign { font-size: 10px; }
+    #mobile-view .list-campaign .fundraiser-name { font-size: 9px; }
+    #mobile-view .list-campaign .lbl-needed { font-size: 9px; }
+    #mobile-view .campaign-funds-needed { font-size: 10px; }
+    #mobile-view .list-campaign > .col-8 { padding-left: 5px; padding-right: 5px; }
+    #mobile-view .list-campaign .campaign-funds-needed-container > .row > .col-6 { padding-left: 5px; padding-right: 5px; }
+    #mobile-view .list-campaign .campaign-funds-needed-container > .row > .col-12 { padding-left: 5px; padding-right: 5px; }
+    #mobile-view .fundraiser-name { margin-bottom: 100px; }
+}
+
